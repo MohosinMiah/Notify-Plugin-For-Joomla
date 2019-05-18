@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="notifly" method="upgrade">
+	<name>PLG_NOTIFLY_VIRTUEMART</name>
+	<author>ThemeXpert</author>
+	<creationDate>November 2010</creationDate>
+	<copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@themexpert.com</authorEmail>
+	<authorUrl>www.themexpert.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_NOTIFLY_VIRTUEMART_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="virtuemart">virtuemart.php</filename>
+		<folder>media</folder>
+	</files>
+	<scriptfile>script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_notifly_virtuemart.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_notifly_virtuemart.sys.ini</language>
+	</languages>
+<!-- 	
+	Check Administrator is want Enable Purchase Yes  or NO 
+ -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="enable_virtuemart_purchase"
+					type="radio"
+					label="enable_virtuemart_purchase"
+					description="enable_virtuemart_purchase"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">YES</option>
+					<option value="0">NO</option>
+				</field>
+
+			
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

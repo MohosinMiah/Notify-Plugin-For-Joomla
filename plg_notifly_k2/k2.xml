@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="notifly" method="upgrade">
+	<name>PLG_NOTIFLY_k2</name>
+	<author>ThemeXpert</author>
+	<creationDate>November 2010</creationDate>
+	<copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@themexpert.com</authorEmail>
+	<authorUrl>www.themexpert.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_NOTIFLY_k2_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="k2">k2.php</filename>
+		<folder>media</folder>
+	</files>
+	<scriptfile>script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_notifly_k2.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_notifly_k2.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="enable_k2_item"
+					type="radio"
+					label="enable_k2_item"
+					description="enable_k2_item"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
